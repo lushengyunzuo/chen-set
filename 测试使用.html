@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试插件</title>
+    <link rel="stylesheet" href="css/kill-all.css">
+    <link rel="stylesheet" href="css/test.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/chenset.js"></script>
+</head>
+
+<body>
+    <!-- 导航插件 -->
+    <div id="box">
+        <ul class="one">
+            <li>
+                <a href="#">一级导航</a>
+                <ul class="two">
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级导航</a>
+                <ul class="two">
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级导航</a>
+                <ul class="two">
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">一级导航</a>
+                <ul class="two">
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                    <li>
+                        <a href="#">二级导航</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+    $(function(){
+        $(".one>li").erji($(".two"));
+        //由于二级导航的存在  一定要给二级导航设置绝对定位  并且层级高过下边覆盖的元素
+    })
+    </script>
+    <div id="banner"><!-- 整体轮播图 -->
+        <div id="bannerbox"><!-- 轮播图盒子 -->
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <span id="left"></span><!-- 左按钮 -->
+        <span id="right"></span><!-- 右按钮 -->
+        <div id="spanbox"> <!-- 小圆点盒子 -->
+            <span class="dd" style="background-color: #f00;"></span>
+            <span class="dd"></span>
+            <span class="dd"></span>
+            <span class="dd"></span>
+        </div>
+    </div>
+    <script>
+    $(function(){
+        $("#bannerbox img").lunBo($("#spanbox"),$("#left"),$("#right"));
+        //第一张图片.lunBo(圆点的直属父级盒子,左箭头,右箭头,原点改变后的颜色,其他原点的颜色)
+        //要给第一个圆点设置样式
+        //如果没有给圆点传参颜色  默认 是红色
+    })
+    </script>
+</body>
+
+</html>

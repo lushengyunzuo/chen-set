@@ -1,0 +1,94 @@
+a:hover{
+    text-decoration: none;
+}
+#box{
+    width: 100%;
+    background-color: #666;
+    position: relative;
+}
+.one{
+    width: 1200px;
+    margin: 0 auto;
+}
+.two{
+    display: none;/* 隐藏二级导航*/
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.two>li{
+    width: 100%;
+}
+.one>li{
+    float: left; /*让一级导航浮动*/
+    width: 25%;
+    position: relative;
+}
+a{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: gold;
+    color: blue;
+    font: bold 20px "微软雅黑";
+}
+#banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+#bannerbox{
+    height: 500px;
+    width: 500%;
+    position: absolute;
+}
+img{
+    height: 500px;
+    width: 20%;
+    float: left;
+}
+#left{
+    position: absolute;
+    left: 0;
+    top: 240px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/zuojiantou.png);
+    background-size: 100%;
+    z-index: 10;
+    display: block;
+    transition: 0.5s;
+}
+#left:hover{
+    background: url(../img/shuangzuojiantou-.png);
+    background-size: 100%;
+}
+#right{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 50px;    
+    height: 50px;
+    top: 240px;
+    background: url(../img/youjiantou.png);
+    background-size: 100%;
+    z-index: 10;
+    transition: 0.5s;
+}
+#right:hover{
+    background: url(../img/shuangyoujiantou-.png);
+    background-size: 100%;
+}
+.dd{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    float: left;
+    top: 450px;
+    left: 43%;
+    margin: 20px;
+}
