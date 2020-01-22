@@ -30,7 +30,7 @@ $.fn.extend({
         function timer(){
             time = setInterval(function(){
                 $i++;move();//自增并执行动画
-            },3000);
+            },2000);
         }
         timer();
         right.click(function(){
