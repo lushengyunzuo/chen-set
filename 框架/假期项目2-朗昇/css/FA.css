@@ -1,0 +1,55 @@
+.banner {
+  background: url(../img/CP_banner.jpg) top center no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 600px;
+  float: left;
+  width: 100%;
+}
+.banner.KH {
+  background: url(../img/KH_banner.jpg) top center no-repeat;
+}
+.banner.ZP {
+  background: url(../img/ZP_banner.png) top center no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 400px;
+  }
+}
+.container h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 800;
+  color: #264a95;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+.row::after,
+.row::before {
+  content: " ";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+.text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 400;
+}
+.img {
+  display: inline;
+}
+.ZP{
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  text-indent: 2em;
+  margin-bottom: 15px;
+}
